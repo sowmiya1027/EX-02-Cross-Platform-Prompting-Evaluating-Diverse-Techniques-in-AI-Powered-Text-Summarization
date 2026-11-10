@@ -3,7 +3,7 @@
 # Reg No: 212225040420
 
 ## AIM
-To evaluate and compare the effectiveness of prompting techniques (zero-shot, few-shot, chain-of-thought, role-based) across different AI platforms (e.g., ChatGPT, Gemini, Claude, Copilot) in a specific task: text summarization.
+To evaluate and compare the effectiveness of prompting techniques across different AI platforms (e.g., ChatGPT, Gemini, Claude, Copilot) in a specific task: text summarization.
 
 ## Scenario:
 You are part of a content curation team for an educational platform that delivers quick summaries of research papers to undergraduate students. Your task is to summarize a 500-word technical article on "The Basics of Blockchain Technology" using multiple AI platforms and prompting strategies.
@@ -129,6 +129,106 @@ Blockchain uses a network of computers to verify transactions instead of dependi
 ### Conclusion:
 
 Blockchain is a modern technology that provides security, transparency, and trust in digital transactions. It is useful in many industries because it reduces fraud, improves data management, and makes transactions more reliable.
-## Result
 
 
+## 4. Constraint Based Prompting
+### Prompt:
+Summarize the article titled "The Basics of Blockchain Technology" by following these constraints:
+
+- The summary must contain 100–120 words.
+- Use simple and clear English.
+- Include only the important concepts.
+- Avoid unnecessary technical terms.
+- Avoid repetition.
+- Use grammatically correct sentences.
+
+### Output:
+#### Summary: The Basics of Blockchain Technology
+Blockchain is a digital technology used to store and share information securely. It works like a digital record book where information is stored in blocks connected in a chain. Each block contains transaction details and a unique code. Information is shared across many computers instead of being controlled by one central authority. This makes blockchain more secure and transparent. Once information is recorded, it is very difficult to change or delete. Blockchain is widely used in cryptocurrency, banking, healthcare, supply chain management, and digital identity verification. It helps reduce fraud, improve data security, and make transactions faster and more reliable.
+
+
+## 5. Output Format Prompt
+### Prompt:
+Summarize the article titled "The Basics of Blockchain Technology" using the following structured format:
+1. Introduction
+2. Key Concepts
+3. Working Principle
+4. Applications
+5. Conclusion
+
+### Output:
+## Summary: The Basics of Blockchain Technology
+
+### 1. Introduction
+
+Blockchain is a digital technology used to store and share information securely. It maintains records in a digital format without depending on a central authority.
+
+### 2. Key Concepts
+
+- Blocks: Store transaction information.
+- Chain: Connects blocks in a sequence.
+- Hash: A unique code that identifies each block.
+- Decentralization: Data is shared across multiple computers.
+- Consensus: A process used to verify transactions.
+
+### 3. Working Principle
+
+When a transaction takes place, it is shared with a network of computers. The computers verify the transaction through a common agreement. Once approved, the transaction is stored in a new block and connected to the existing chain.
+
+### 4. Applications
+
+- Cryptocurrency (Bitcoin).
+- Banking and digital payments.
+- Healthcare record management.
+- Supply chain tracking.
+- Digital identity verification.
+
+### 5. Conclusion
+
+Blockchain is a secure and transparent technology that improves data management, reduces fraud, and builds trust in digital transactions. It has many useful applications in different industries.
+
+
+# CROSS-PLATFORM OUTPUT COMPARISON
+
+| AI Platform       | Prompting Technique | Output Quality | Main Observation                                                |
+| ----------------- | ------------------- | -------------- | --------------------------------------------------------------- |
+| ChatGPT           | Basic               | Good           | Generated a simple summary covering the main concepts.          |
+| ChatGPT           | Role                | Very Good      | Explained blockchain using student-friendly language.           |
+| ChatGPT           | Context             | Very Good      | Focused on concepts relevant to undergraduate students.         |
+| ChatGPT           | Constraint          | Very Good      | Followed the word limit and avoided unnecessary details.        |
+| ChatGPT           | Output Format       | Excellent      | Presented information under clear headings.                     |
+| Gemini            | Basic               | Good           | Provided a brief explanation of blockchain.                     |
+| Gemini            | Role                | Very Good      | Included clear explanations and relevant examples.              |
+| Gemini            | Context             | Excellent      | Connected blockchain concepts with practical applications.      |
+| Gemini            | Constraint          | Very Good      | Produced a concise summary following the instructions.          |
+| Gemini            | Output Format       | Excellent      | Organized the summary into structured sections.                 |
+| Claude AI         | Basic               | Very Good      | Included important concepts with logical flow.                  |
+| Claude AI         | Role                | Very Good      | Generated a detailed student-oriented explanation.              |
+| Claude AI         | Context             | Excellent      | Provided relevant explanations with good conceptual coverage.   |
+| Claude AI         | Constraint          | Very Good      | Maintained clarity while following the given restrictions.      |
+| Claude AI         | Output Format       | Excellent      | Generated a detailed and well-organized summary.                |
+| Microsoft Copilot | Basic               | Good           | Generated a short and understandable summary.                   |
+| Microsoft Copilot | Role                | Very Good      | Explained the topic in beginner-friendly language.              |
+| Microsoft Copilot | Context             | Very Good      | Focused on the educational purpose of the task.                 |
+| Microsoft Copilot | Constraint          | Excellent      | Produced a concise response following the specified conditions. |
+| Microsoft Copilot | Output Format       | Very Good      | Followed the requested headings and structure.                  |
+
+
+
+# OVERALL FINDINGS
+
+| Prompting Technique  | Finding Based on Generated Output                                         |
+| -------------------- | ------------------------------------------------------------------------- |
+| Basic Prompt         | Generates a general summary                     |
+| Role Prompt          | Provides explanations according to the assigned role and audience.        |
+| Context Prompt       | Improves relevance by considering the educational background and purpose. |
+| Constraint Prompt    | Controls summary length, language, and content.                           |
+| Output Format Prompt | Produces structured content with headings and organized information.      |
+
+# CONCLUSION
+
+The experiment shows that prompting techniques have a significant impact on AI-generated text summaries. Basic prompting produces general summaries, while role and context prompting improve audience relevance. Constraint prompting helps maintain the required length and simplicity, whereas output format prompting provides better organization. The four AI platforms demonstrate different strengths in generating summaries. Therefore, the effectiveness of an AI-generated summary depends on both the prompting technique and the AI platform used.
+
+# Result
+This experiment helped in understanding the importance of prompt engineering in Generative AI. Different prompting techniques can produce different results even when the same topic is given to an AI system. Selecting an appropriate prompting strategy helps users obtain more accurate, relevant and well-organized responses.
+Therefore, effective prompt writing is an important skill for making better use of modern AI tools.
