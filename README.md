@@ -10,11 +10,11 @@ You are part of a content curation team for an educational platform that deliver
 
 Your goal is to determine which combination of prompting technique + platform provides the best summary in terms of:
 
-1.Accuracy
-2.Coherence
-3.Simplicity
-4.Speed
-5.User experience
+- Accuracy
+- Coherence
+- Simplicity
+- Speed
+- User experience
 
 ## AI Tools Used:
 - ChatGPT
